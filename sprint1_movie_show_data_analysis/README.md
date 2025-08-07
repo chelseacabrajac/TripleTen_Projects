@@ -4,50 +4,69 @@
 
 ## 📋 Project Overview
 
-This project focuses on **Data Preprocessing & Exploratory Data Analysis** of movie and TV show datasets. The goal was to understand viewing patterns, content trends, and analyze the entertainment industry landscape through comprehensive data analysis.
+This project demonstrates **Data Analysis with Pandas** through systematic data cleaning, manipulation, and function creation using a comprehensive movie and TV show dataset. The focus was on developing practical pandas skills including DataFrame operations, data filtering, indexing, and creating reusable functions for data analysis tasks.
 
 ## 🎯 Objectives
 
-- Perform thorough data cleaning and preprocessing on entertainment datasets
-- Conduct exploratory data analysis to identify viewing patterns and trends
-- Create meaningful visualizations to communicate insights about content ratings, genres, and release patterns
-- Apply statistical analysis techniques to understand the entertainment industry
+- Master fundamental pandas operations for data cleaning and manipulation
+- Practice DataFrame indexing, filtering, and data correction techniques  
+- Develop reusable functions for common data analysis tasks
+- Learn systematic approaches to data quality assessment and correction
+- Apply conditional logic and data categorization methods
 
 ## 🛠️ Technologies & Libraries Used
 
 - **Python** - Primary programming language
-- **Pandas** - Data manipulation and cleaning
-- **NumPy** - Numerical computations
-- **Matplotlib** - Data visualization
-- **Seaborn** - Statistical data visualization
+- **Pandas** - Data manipulation, cleaning, and analysis
 - **Jupyter Notebook** - Interactive development environment
 
 ## 📊 Key Analyses Performed
 
-1. **Data Quality Assessment**
-   - Identified and handled missing values
-   - Detected and addressed outliers
-   - Standardized data formats and types
+1. **Data Cleaning & Column Standardization** (Task 1)
+   - Corrected column naming issues (spaces, special characters, case inconsistencies)
+   - Standardized column names: `r0le` → `role`, `TITLE` → `title`, `imdb sc0re` → `imdb_score`
+   - Removed unnecessary whitespace from column headers
 
-2. **Content Analysis**
-   - Distribution of content by genre
-   - Release year trends and patterns
-   - Rating distributions across different content types
+2. **Data Quality Correction** (Task 2)
+   - Identified and corrected encoding issues with special characters
+   - Fixed misspelled actor name: "In??s Prieto" → "Ines Prieto"
+   - Used `.loc[]` indexing for precise data correction
 
-3. **Trend Analysis**
-   - Popular genres over time
-   - Content production patterns
-   - Regional content preferences
+3. **Data Filtering & Actor Analysis** (Task 3)
+   - Implemented conditional filtering to find all works by specific actors
+   - Extracted relevant columns (title, release_year, imdb_score, genres)
+   - Created actor-specific filmography profiles
 
-## 📈 Key Findings
+4. **High-Rating Content Identification** (Task 4)
+   - Filtered movies with IMDb scores ≥ 9.0
+   - Applied set operations to remove duplicate titles
+   - Created curated lists of top-rated content
 
-- **Data Cleaning Challenges**: Identified and corrected column naming issues including inconsistent spacing, special characters (r0le → role), and case inconsistencies (TITLE → title)
-- **Data Quality Issues**: Found encoding problems with special characters in actor names (e.g., "In??s Prieto" corrected to "Ines Prieto") requiring manual data correction
-- **IMDb Score Distribution**: Developed rating categorization system with thresholds: Excellent (≥9.0), Good (7.0-8.9), Average (5.0-6.9), and Low (<5.0) for content evaluation
-- **Dataset Structure**: Successfully processed movie and TV show data containing actor information, character roles, titles, release years, genres, IMDb scores, and vote counts
-- **Data Manipulation Skills**: Created functions for filtering top-rated movies by decade, extracting cast lists for specific titles, and categorizing content by score ranges
-- **Functional Programming**: Implemented reusable functions including `get_unique_top_movies()`, `get_top_movies_from_decade()`, `get_actors_for_title()`, and `categorize_imdb_score()` for data analysis
-- **Data Processing Methodology**: Applied systematic approach to data cleaning including column renaming, data type validation, and content correction for analysis readiness
+5. **Function Development** (Tasks 5-8)
+   - **`get_unique_top_movies(min_score)`**: Finds unique high-rated movies above score threshold
+   - **`get_top_movies_from_decade(decade_start, min_score)`**: Retrieves top movies from specific decades
+   - **`get_actors_for_title(title)`**: Lists all actors in a given movie/show as formatted string
+   - **`categorize_imdb_score(title)`**: Categorizes content by rating (Excellent/Good/Average/Low)
+
+## 📈 Key Findings & Technical Skills Demonstrated
+
+- **Data Cleaning Mastery**: Successfully corrected systematic column naming issues including inconsistent spacing, special characters (`r0le` → `role`), and case inconsistencies (`TITLE` → `title`)
+
+- **Precision Data Correction**: Resolved encoding problems with special characters in actor names (e.g., "In??s Prieto" → "Ines Prieto") using targeted `.loc[]` indexing
+
+- **Rating Categorization System**: Developed comprehensive IMDb score classification with thresholds: Excellent (≥9.0), Good (7.0-8.9), Average (5.0-6.9), and Low (<5.0)
+
+- **Dataset Structure Mastery**: Successfully processed complex entertainment data containing actor information, character roles, titles, release years, genres, IMDb scores, and vote counts across movies and TV shows
+
+- **Advanced Filtering Techniques**: Implemented multi-condition filtering for decade-based analysis, actor-specific searches, and score-based content curation
+
+- **Functional Programming Implementation**: Created four reusable, parameterized functions:
+  - `get_unique_top_movies()` - Threshold-based movie filtering
+  - `get_top_movies_from_decade()` - Time-period and score filtering
+  - `get_actors_for_title()` - Cast extraction and formatting
+  - `categorize_imdb_score()` - Automated content rating classification
+
+- **Data Processing Methodology**: Applied systematic approach combining DataFrame operations, set operations for duplicate removal, string manipulation for output formatting, and conditional logic for categorization
 
 ## 📁 Files in This Project
 

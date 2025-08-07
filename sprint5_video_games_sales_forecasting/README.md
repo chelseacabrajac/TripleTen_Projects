@@ -4,41 +4,93 @@
 
 ## 📋 Project Overview
 
-This project focuses on **Predictive Modeling & Machine Learning** to forecast video game sales performance. The analysis applies advanced machine learning techniques to predict sales and identify key factors that influence game success across different markets.
+This project demonstrates comprehensive **Video Game Market Analysis and Business Intelligence** using historical gaming data to identify patterns that determine game success. Working as an analyst for online game store Ice, the analysis focuses on market trends, platform lifecycles, regional preferences, and statistical validation to inform 2017 marketing campaign strategies and identify potential high-performing games.
 
 ## 🎯 Objectives
 
-- Build robust predictive models to forecast video game sales performance
-- Apply machine learning techniques for accurate sales prediction
-- Analyze factors influencing game success in different regional markets
-- Develop actionable insights for game development and marketing strategies
+- Analyze video game market data to identify patterns determining game success
+- Evaluate platform lifecycles and performance trends for strategic planning
+- Conduct comprehensive regional market analysis across North America, Europe, and Japan
+- Investigate genre preferences and their impact on sales performance
+- Apply statistical hypothesis testing to validate market assumptions
+- Generate actionable business intelligence for 2017 marketing campaign planning
 
 ## 🛠️ Technologies & Libraries Used
 
 - **Python** - Primary programming language
-- **Pandas** - Data manipulation and feature engineering
-- **NumPy** - Numerical computations
-- **Matplotlib** - Data visualization
-- **Seaborn** - Statistical data visualization
+- **Pandas** - Data manipulation, aggregation, and preprocessing
+- **NumPy** - Numerical computations and data transformations
+- **SciPy** - Statistical hypothesis testing (t-tests)
+- **Matplotlib** - Data visualization and trend analysis
+- **Seaborn** - Statistical plots and heatmap visualizations
 - **Jupyter Notebook** - Interactive development environment
 
 ## 📊 Key Analyses Performed
 
-1. **Feature Engineering**
-   - Game attribute analysis (genre, platform, rating)
-   - Regional market segmentation
-   - Temporal trend analysis
+### **Data Preprocessing & Quality Assessment**
+1. **Data Cleaning & Standardization**
+   - Standardized column names and converted data types for temporal analysis
+   - Handled missing values: filled ESRB ratings with 'Unknown', removed incomplete entries
+   - Converted 'TBD' user scores to numeric format for statistical analysis
+   - Calculated total sales across all regions (NA, EU, JP, Other)
 
-2. **Predictive Modeling**
-   - Linear regression for baseline predictions
-   - Random Forest for non-linear relationships
-   - Gradient boosting for ensemble predictions
-   - Model comparison and validation
+2. **Data Quality Analysis**
+   - Identified substantial missing values in critic scores, user scores, and ratings
+   - Analyzed missing value patterns related to release years and regional differences
+   - Assessed data completeness for reliable statistical testing
 
-3. **Market Analysis**
-   - Regional sales pattern identification
-   - Platform performance across markets
-   - Genre popularity trends over time
+### **Temporal & Platform Lifecycle Analysis**
+3. **Game Release Trends (1980-2016)**
+   - Peak release period: 2006-2011 with maximum in 2009-2010
+   - Identified correlation between economic recession (2006-2008) and increased game releases
+   - Selected relevant period (2007-2015) for 2017 prediction modeling
+
+4. **Platform Performance & Lifecycle Analysis**
+   - **Consistent Performers**: PS4, XOne, PC maintained steady sales
+   - **Market Exits**: Gen, SCD, TG16 disappeared from market
+   - **Declining Platforms**: DS, PS2, Wii, Xbox360 showed downward trends
+   - **Platform Lifecycle**: Established typical 10-year platform lifespan
+
+### **Market Analysis & Business Intelligence**
+5. **Genre Performance Analysis**
+   - **Market Leaders**: Action games dominated across all regions
+   - **Secondary Genres**: Sports and Shooter games showed strong performance
+   - **Genre Advantage**: Interactive and simulation-based games outperformed single-purpose titles
+   - **Market Share Calculation**: Quantified genre distribution for strategic planning
+
+6. **Review Score Impact Assessment**
+   - Analyzed correlation between critic/user scores and sales performance
+   - Platform-specific analysis (Wii) revealing score-sales relationships
+   - Cross-platform game comparison for multi-release titles
+
+### **Regional Market Analysis**
+7. **Cross-Regional Platform Comparison**
+   - **Market Size Ranking**: North America > Europe > Japan
+   - Platform preference analysis across three major regions
+   - Identified regional variations in platform adoption
+
+8. **Regional Genre Preferences**
+   - Action genre dominance confirmed across all regions
+   - Regional variations in secondary genre preferences
+   - Cultural market differences in game type preferences
+
+9. **ESRB Rating Impact by Region**
+   - E-rated and Unknown-rated games showed strong cross-regional performance
+   - Notable finding: Japan sales increase with 'Unknown' ESRB ratings
+   - Regional regulatory and cultural factors affecting rating impact
+
+### **Statistical Hypothesis Testing**
+10. **Platform User Rating Comparison**
+    - **H₀**: Xbox One and PC platforms have equal average user ratings
+    - **H₁**: Platform ratings differ significantly
+    - **Result**: Failed to reject H₀ (p-value = 0.12 > α = 0.05)
+    - **Finding**: Platform choice doesn't significantly impact user engagement
+
+11. **Genre User Rating Comparison**
+    - **H₀**: Action and Sports genres have equal average user ratings  
+    - **H₁**: Genre ratings differ significantly
+    - **Result**: Rejected H₀ (p-value = 0.002 < α = 0.05)
+    - **Finding**: Genre significantly influences user engagement and satisfaction
 
 ## 📈 Key Findings
 
