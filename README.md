@@ -1,4 +1,4 @@
-# TripleTen Data Science Projects
+# Chelsea's TripleTen Data Science Projects
 
 A portfolio of data science projects completed during the TripleTen Bootcamp, showcasing skills in data analysis, statistical modeling, and machine learning using Python.
 
@@ -24,7 +24,7 @@ This repository contains my data science projects from the TripleTen Bootcamp. E
 - Performed data cleaning, preprocessing, and exploratory data analysis
 - Created visualizations to identify insights about content ratings, genres, and release patterns
 
-### 2. [Instacart Market Basket Analysis](./sprint2_instacart_basket_market_analysis/)
+### 2. [Instacart Market Basket Analysis](./sprint2_instacart_market_basket_analysis/)
 **Focus:** Statistical Analysis & Data Insights
 - Analyzed customer purchasing behavior using Instacart grocery data
 - Performed statistical analysis to understand shopping patterns
@@ -54,7 +54,7 @@ This repository contains my data science projects from the TripleTen Bootcamp. E
 ## 📧 Contact
 
 **Chelsea Cabrajac**
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/chelseacabrajac)
+- LinkedIn: [linkedin.com/in/chelseacabrajac](https://linkedin.com/in/chelseacabrajac)
 - Email: cabrajac.cm@gmail.com
 - GitHub: [github.com/chelseacabrajac](https://github.com/chelseacabrajac)
 

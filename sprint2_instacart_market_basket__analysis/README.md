@@ -54,7 +54,7 @@ This project focuses on **Statistical Analysis & Data Insights** using Instacart
 
 ## 📁 Files in This Project
 
-- `instacart_basket_market_analysis.ipynb` - Main analysis notebook
+- `instacart_market_basket_analysis.ipynb` - Main analysis notebook
 - `README.md` - Project documentation
 
 ## 🔗 Navigation
