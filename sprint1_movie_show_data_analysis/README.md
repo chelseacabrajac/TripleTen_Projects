@@ -73,7 +73,7 @@ This project demonstrates **Data Analysis with Pandas** through systematic data 
 - `movie_shows_data_analysis.ipynb` - Main analysis notebook
 - `README.md` - Project documentation
 
-## � Navigation
+## 🔗 Navigation
 
 ← [Back to Main Portfolio](../README.md)
 
